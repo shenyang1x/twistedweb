@@ -7,6 +7,7 @@ from twisted.web.server import Site, NOT_DONE_YET
 from twisted.web.resource import Resource
 from twisted.web.static import File
 from twisted.internet import reactor
+import time
 # from mako.template import Template
 # from mako.lookup import TemplateLookup
 from jinja2 import Environment, FileSystemLoader
@@ -42,8 +43,15 @@ class Root(Resource):
             app_title=app_title, page_title='aaa').encode('utf-8')
 
 
+def Echo():
+    reactor.stop()
+    print "the reactor is stop"
+
+
 if __name__ == '__main__':
-    print 'abc'
+
     factory = Site(Root())
     reactor.listenTCP(8880, factory)
+    reactor.callLater(30, Echo)
+    print "the reactor is run"
     reactor.run()
