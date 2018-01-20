@@ -5,4 +5,4 @@ python:
 script:
   - python app.py test
 install:
-    - pip install twisted
+    - pip install twisted jinja2
