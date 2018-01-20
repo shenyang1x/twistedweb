@@ -43,6 +43,7 @@ class Root(Resource):
 
 
 if __name__ == '__main__':
+    print 'abc'
     factory = Site(Root())
     reactor.listenTCP(8880, factory)
     reactor.run()
