@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#encoding=utf-8
+# encoding=utf-8
 
 import os
 
@@ -53,5 +53,6 @@ if __name__ == '__main__':
     factory = Site(Root())
     reactor.listenTCP(8880, factory)
     reactor.callLater(30, Echo)
+    print "abc"
     print "the reactor is run"
     reactor.run()
