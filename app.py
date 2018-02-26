@@ -54,4 +54,5 @@ if __name__ == '__main__':
     reactor.listenTCP(8880, factory)
     reactor.callLater(30, Echo)
     print "the reactor is run"
+    print "test"
     reactor.run()
