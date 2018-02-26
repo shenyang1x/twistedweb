@@ -53,10 +53,5 @@ if __name__ == '__main__':
     factory = Site(Root())
     reactor.listenTCP(8880, factory)
     reactor.callLater(30, Echo)
-    print "the reactor is run"
-    print "test"
-    print "test"
-    print "test"
-    print "test"
-    print "test"
+
     reactor.run()
