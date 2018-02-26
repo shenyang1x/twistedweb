@@ -57,3 +57,4 @@ if __name__ == '__main__':
     print "abc"
     print "test"
     print "abcdefg"
+    print "ddd"
