@@ -55,4 +55,5 @@ if __name__ == '__main__':
     reactor.callLater(30, Echo)
     print "the reactor is run"
     print "test"
+    print "test"
     reactor.run()
