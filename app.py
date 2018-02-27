@@ -58,3 +58,4 @@ if __name__ == '__main__':
     print "123"
     print "000"
     print "111"
+    print "222"
