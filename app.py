@@ -57,3 +57,4 @@ if __name__ == '__main__':
     print "abc"
     print "123"
     print "000"
+    print "111"
