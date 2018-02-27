@@ -56,3 +56,4 @@ if __name__ == '__main__':
     reactor.run()
     print "abc"
     print "123"
+    print "000"
