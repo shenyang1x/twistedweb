@@ -45,7 +45,7 @@ class Root(Resource):
 
 def Echo():
     reactor.stop()
-    print "the reactor is stop"
+    # print "the reactor is stop"
 
 
 if __name__ == '__main__':
