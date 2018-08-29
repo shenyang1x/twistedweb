@@ -34,6 +34,7 @@ class Root(Resource):
 
         else:
             return self
+            pass
 
     def render_GET(self, request):
         # tpl = lookup.get_template('index.html')
